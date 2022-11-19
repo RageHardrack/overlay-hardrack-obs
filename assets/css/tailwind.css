@@ -12,3 +12,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
 }
+
+.frame-border {
+  @apply border-4 border-gold overflow-hidden;
+}

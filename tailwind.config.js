@@ -15,6 +15,10 @@ module.exports = {
           "black-coffee": "#322A26",
           bone: "#E0DDCF",
         },
+        aspectRatio: {
+          '4/3': '4 / 3',
+          '21/9': '21 / 9',
+        },
       },
       keyframes: {
         expand: {
