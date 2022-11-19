@@ -1,3 +1,6 @@
 <template>
-  <div><CamFrame /></div>
+  <div class="p-8">
+    <CamFrame />
+    <BrandTitle />
+  </div>
 </template>
