@@ -1,12 +1,13 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: false
-})</script>
+  layout: false,
+});
+</script>
 
 <template>
   <NuxtLayout name="main">
-    <section class="flex flex-col items-center justify-between w-10/12">
-      <div>Banner</div>
+    <section class="flex flex-col items-center w-10/12 justify-evenly">
+      <Banner />
       <ScreenFrame />
       <div>Stats</div>
     </section>
@@ -14,7 +15,7 @@ definePageMeta({
     <section class="flex flex-col w-2/12 space-y-4">
       <CamFrame />
       <ChatFrame />
-      <SocialFrame/>
+      <SocialSection />
     </section>
   </NuxtLayout>
 </template>
