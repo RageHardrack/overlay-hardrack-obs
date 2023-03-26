@@ -1,5 +1,9 @@
 {
+  "name": "overlay-hardrack-obs",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -8,7 +12,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "6.1.3",
-    "nuxt": "3.0.0"
+    "@nuxtjs/tailwindcss": "6.6.4",
+    "nuxt": "3.3.2"
   }
 }
