@@ -1,3 +1,3 @@
 <template>
-    <div class="frame-border h-full bg-black-coffee/50"></div>
+  <div class="w-full h-full frame-border bg-black-coffee/50"></div>
 </template>

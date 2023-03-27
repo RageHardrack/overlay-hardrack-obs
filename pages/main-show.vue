@@ -6,16 +6,25 @@ definePageMeta({
 
 <template>
   <NuxtLayout name="main">
-    <section class="flex flex-col items-center w-10/12 justify-evenly">
+    <header class="flex items-center justify-between w-full">
       <Banner />
-      <ScreenFrame />
-      <div>Stats</div>
+      <CamFrame />
+    </header>
+
+    <section class="flex items-center justify-between flex-1 w-full gap-x-4">
+      <div class="w-10/12">
+        <ScreenFrame />
+      </div>
+      <div class="w-2/12 h-full">
+        <ChatFrame />
+      </div>
     </section>
 
-    <section class="flex flex-col w-2/12 space-y-4">
-      <CamFrame />
-      <ChatFrame />
-      <SocialSection />
+    <section class="flex items-center justify-between w-full">
+      <div class="w-10/12">Stats</div>
+      <div class="flex flex-col items-center justify-center w-2/12">
+        <SocialSection />
+      </div>
     </section>
   </NuxtLayout>
 </template>

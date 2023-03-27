@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="frame-border w-full aspect-[4/3]"></div>
+  <div class="frame-border w-[260px] h-[150px]"></div>
 </template>
