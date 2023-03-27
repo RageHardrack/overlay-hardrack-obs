@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col px-4">
+  <div class="flex flex-col gap-y-1">
     <span class="flex items-center justify-start gap-x-4">
       <IconGitHubSvg class="w-8 h-8 text-gold" />
       <p class="text-bone">RageHardrack</p>

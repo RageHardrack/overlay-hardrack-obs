@@ -13,6 +13,11 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "6.6.4",
-    "nuxt": "3.3.2"
+    "nuxt": "3.3.2",
+    "nuxt-icon": "0.3.2"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "0.4.7",
+    "dayjs": "1.11.7"
   }
 }
