@@ -1,8 +1,10 @@
-import { TwitchServices } from "~~/server/services";
+import { TmiClient } from "~~/vendors";
 
 export default defineEventHandler(async (event) => {
   try {
-    return TwitchServices.getToken();
+    await TmiClient.disconnect();
+
+    return { message: "Bot desactivado correctamente" };
   } catch (error: any) {
     sendError(
       event,

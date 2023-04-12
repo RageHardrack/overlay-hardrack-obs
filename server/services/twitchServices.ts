@@ -1,4 +1,4 @@
-import { TwitchGetTokenResponse } from "~~/interfaces";
+import { TwitchGetRefreshTokenResponse, TwitchGetTokenResponse } from "~~/interfaces";
 
 const { twitchClientId, twitchClientSecret, twitchOAuthUrl } =
   useRuntimeConfig();
@@ -17,6 +17,18 @@ class TwitchServicesClass {
         client_id: this.clientId,
         client_secret: this.clientSecret,
         grant_type: "client_credentials",
+      },
+    });
+  }
+
+  async getRefreshToken(): Promise<TwitchGetRefreshTokenResponse> {
+    return await $fetch<TwitchGetRefreshTokenResponse>(this.twitchOAuthUrl, {
+      method: "POST",
+      query: {
+        grant_type: "refresh_token",
+        refresh_token: "",
+        client_id: this.clientId,
+        client_secret: this.clientSecret,
       },
     });
   }
