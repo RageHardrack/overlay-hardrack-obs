@@ -10,6 +10,7 @@ body {
     rgba(77, 126, 168, 1) 44%
   );
   min-height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
