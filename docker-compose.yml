@@ -12,7 +12,7 @@ services:
       - TWITCH_CLIENT_ID=${TWITCH_CLIENT_ID}
       - TWITCH_CLIENT_SECRET=${TWITCH_CLIENT_SECRET}
   nginx:
-    image: nginx:latest
+    image: nginx:stable
     ports:
       - "80:80"
     volumes:

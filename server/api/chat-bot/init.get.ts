@@ -1,19 +1,17 @@
-import { TmiClient, rollDice } from "~~/vendors";
+import { TmiClient } from "~~/vendors";
 
 export default defineEventHandler(async (event) => {
   try {
-    await TmiClient.connect();
+    await TmiClient.createConnection();
 
-    TmiClient.on("message", (channel, tags, message, self) => {
-      if (self) {
-        return;
-      }
+    TmiClient.onMessage((channel, tags, message, self) => {
+      if (self) return;
+
       const commandName = message.trim();
 
       if (commandName === "!dice") {
-        const num = rollDice();
-        TmiClient.say(channel, `You rolled a ${num}`);
-        console.log(`* Executed ${commandName} command`);
+        
+        TmiClient.sendMessage(channel, `You rolled a $hello`);
       } else {
         console.log(`* Unknown command ${commandName}`);
       }
