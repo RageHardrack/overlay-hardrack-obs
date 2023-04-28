@@ -19,6 +19,10 @@ module.exports = {
           '4/3': '4 / 3',
           '21/9': '21 / 9',
         },
+        fontFamily:{
+          'roboto-mono': ['Roboto Mono'],
+          metalick: ['Metalick'],
+        }
       },
       keyframes: {
         expand: {
