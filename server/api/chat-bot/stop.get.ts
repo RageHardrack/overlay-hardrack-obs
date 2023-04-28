@@ -2,7 +2,7 @@ import { TmiClient } from "~~/vendors";
 
 export default defineEventHandler(async (event) => {
   try {
-    await TmiClient.disconnect();
+    await TmiClient.closeConnection();
 
     return { message: "Bot desactivado correctamente" };
   } catch (error: any) {
