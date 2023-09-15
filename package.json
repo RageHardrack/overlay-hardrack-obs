@@ -12,14 +12,14 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "6.6.4",
+    "@nuxtjs/tailwindcss": "6.7.0",
     "@types/tmi.js": "1.8.3",
-    "nuxt": "3.3.2",
-    "nuxt-icon": "0.3.2"
+    "nuxt": "3.5.2",
+    "nuxt-icon": "0.4.1"
   },
   "dependencies": {
-    "@pinia/nuxt": "0.4.7",
-    "dayjs": "1.11.7",
+    "@pinia/nuxt": "0.4.11",
+    "dayjs": "1.11.8",
     "tmi.js": "1.8.5"
   }
 }
